@@ -14,9 +14,35 @@ export class ExercicioDataBindingComponent implements OnInit {
   tamanho="100px";
 
 
-  constructor() { }
+  
+  botaoHabilitado = true;
+
+  constructor() {
+    // setInterval(() => {
+    //   this.enviarInformacao.emit();
+    // }, 1000)
+  }
 
   ngOnInit(): void {
   }
 
+  getTextoAcessivel() {
+    let valor = 10;
+    const texto = '20';
+    const lala = valor+ texto;
+
+    return 'Um texto acessível...' + this.imageURL;
+  }
+
+  clicouNoBotao(event: MouseEvent) {
+    console.log('Clicou no botão!', event);
+    this.enviarInformacao.emit();
+  }
+
+  passouMousePorCima(event: any) {
+    console.log('Passou o mouse', event.value);
+  }
+
+
+  
 }

@@ -8,9 +8,30 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'seja bem-vindo';
 
-  eventoRecebido(){
-    console.log('recebi evento no app.component');
+  constructor() {
+    console.log('Passou por aqui');
+    
+    this.title = 'Outra coisa';
+
+    setTimeout(() => {
+      this.title = 'Seja bem-vindo!';
+    }, 3000);
   }
+
+  somar(numero1: number, numero2: number) {
+    return numero1 + numero2;
+  }
+
+  texto() {
+    return 'Vitor Farias';
+  }
+
+ eventoRecebido(event: any) {
+    console.log('Recebi um evento no AppComponent', event);
+  }
+
+
+
 }
 
 
