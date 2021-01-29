@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'seja bem-vindo';
+
+  eventoRecebido(){
+    console.log('recebi evento no app.component');
+  }
 }
 
 
