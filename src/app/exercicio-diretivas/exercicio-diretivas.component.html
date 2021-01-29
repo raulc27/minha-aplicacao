@@ -1,0 +1,15 @@
+<p>exercicio-diretivas works!</p>
+
+
+<button (click)="trocarValor()">Trocar valor</button>
+
+
+<div *ngIf="deveExibir; else elseBlock">
+
+    Olá, estou dentro do ngIf
+</div>
+
+<ng-template #elseBlock>
+
+    Vou ser exibido quando o deveExibir for FALSE.
+</ng-template>
