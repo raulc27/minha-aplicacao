@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import {FooterComponent} from './footer/footer.component';
 import { ExercicioDataBindingComponent } from './exercicio-data-binding/exercicio-data-binding.component';
 import { ExercicioDiretivasComponent } from './exercicio-diretivas/exercicio-diretivas.component';
+import { ExercicioPipesComponent } from './exercicio-pipes/exercicio-pipes.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ExercicioDiretivasComponent } from './exercicio-diretivas/exercicio-dir
     HomeComponent,
     FooterComponent,
     ExercicioDataBindingComponent,
-    ExercicioDiretivasComponent
+    ExercicioDiretivasComponent,
+    ExercicioPipesComponent
   ],
   imports: [
     BrowserModule,
