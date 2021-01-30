@@ -1,4 +1,5 @@
 import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import localePT from '@angular/common/locales/pt';
 import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,14 +13,13 @@ import { LancamentosComponent } from './area-logada/lancamentos/lancamentos.comp
 import { PlanosContaComponent } from './area-logada/planos-conta/planos-conta.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { Erro404Component } from './erro404/erro404.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
-import { ExercicioDataBindingComponent } from './shared/exercicio-data-binding/exercicio-data-binding.component';
-import { ExercicioDiretivasComponent } from './shared/exercicio-diretivas/exercicio-diretivas.component';
-import { ExercicioPipesComponent } from './shared/exercicio-pipes/exercicio-pipes.component';
-import { ServiceComponent } from './service/service.component';
+import { ExercicioDataBindingComponent } from './shared/components/exercicio-data-binding/exercicio-data-binding.component';
+import { ExercicioDiretivasComponent } from './shared/components/exercicio-diretivas/exercicio-diretivas.component';
+import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exercicio-pipes.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 registerLocaleData(localePT,'pt')
 
@@ -38,13 +38,13 @@ registerLocaleData(localePT,'pt')
     LancamentosComponent,
     NaoEncontradoComponent,
     Erro404Component,
-    AreaLogadaComponent,
-    ServiceComponent
+    AreaLogadaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [{
     provide:LOCALE_ID,
