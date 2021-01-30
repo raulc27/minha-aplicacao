@@ -11,7 +11,6 @@ import { MEMES_AGRUPADOS_POR_CATEGORIA } from './exercicio-diretivas-constantes'
 export class ExercicioDiretivasComponent {
 
 
-
 MEMES_AGRUPADOS_POR_CATEGORIA=MEMES_AGRUPADOS_POR_CATEGORIA;
 IMAGEM_PREFIXO="https://raw.githubusercontent.com/vitorfgsantos/angular-memes-diretivas/master/images/";
 
@@ -27,5 +26,15 @@ trocarValor(){
   this.deveExibir=!this.deveExibir;
 }
 
+
+classeCSS='verde';
+
+trocarParaVermelho(){
+  this.classeCSS='vermelho';
+}
+
+trocarParaVerde(){
+  this.classeCSS='verde';
+}
 
 }

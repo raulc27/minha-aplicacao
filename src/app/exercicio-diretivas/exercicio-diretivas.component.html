@@ -15,7 +15,7 @@
 </ng-template>
 
 
-<!-- ngFor -->
+<!-- ngFor 
 
 <ul>
     <li *ngFor="let fruta of frutas; let index=index">
@@ -24,8 +24,8 @@
 
     </li>
 </ul>
-
-<!-- Exercicio -->
+-->
+<!-- Exercicio 
 
 <ul>
     <li *ngFor="let memesAgrupados of MEMES_AGRUPADOS_POR_CATEGORIA">
@@ -36,3 +36,9 @@
             </div>
     </li>
 </ul>
+-->
+<!-- diretivas de atributo -->
+<button (click)='trocarParaVermelho'>Trocar para Veremlho</button>
+<button (click)='trocarParaVerde'>Trocar para verde</button>
+
+<h2 [ngClass]="classeCSS">Meu texto com ngClass</h2>
