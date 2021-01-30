@@ -11,6 +11,10 @@ import { ExercicioPipesComponent } from './exercicio-pipes/exercicio-pipes.compo
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { PlanosContaComponent } from './planos-conta/planos-conta.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { LancamentosComponent } from './lancamentos/lancamentos.component';
 
 
 registerLocaleData(localePT,'pt')
@@ -23,7 +27,11 @@ registerLocaleData(localePT,'pt')
     FooterComponent,
     ExercicioDataBindingComponent,
     ExercicioDiretivasComponent,
-    ExercicioPipesComponent
+    ExercicioPipesComponent,
+    LoginComponent,
+    PlanosContaComponent,
+    CadastroComponent,
+    LancamentosComponent
   ],
   imports: [
     BrowserModule,
