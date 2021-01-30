@@ -13,3 +13,26 @@
 
     Vou ser exibido quando o deveExibir for FALSE.
 </ng-template>
+
+
+<!-- ngFor -->
+
+<ul>
+    <li *ngFor="let fruta of frutas; let index=index">
+
+        {{index+10}}-{{fruta}}
+
+    </li>
+</ul>
+
+<!-- Exercicio -->
+
+<ul>
+    <li *ngFor="let memesAgrupados of MEMES_AGRUPADOS_POR_CATEGORIA">
+        <h2>{{memesAgrupados.categoria}}</h2>
+
+            <div *ngFor="let meme of memesAgrupados.memes">
+            <img [src]="IMAGEM_PREFIXO + meme.imagemURL" width="200" >
+            </div>
+    </li>
+</ul>
