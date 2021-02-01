@@ -20,6 +20,7 @@ import { ExercicioDiretivasComponent } from './shared/components/exercicio-diret
 import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exercicio-pipes.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 registerLocaleData(localePT,'pt')
 
@@ -38,7 +39,8 @@ registerLocaleData(localePT,'pt')
     LancamentosComponent,
     NaoEncontradoComponent,
     Erro404Component,
-    AreaLogadaComponent
+    AreaLogadaComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
